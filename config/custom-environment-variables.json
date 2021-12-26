@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongouri",
+    "jwtkey": "jwtkey"
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head.ejs') %>
+
+    <body>
+        <%- include('partials/navbar.ejs') %>
+            <table>
+                <tr>
+
+                    <th>FirstName</th>
+                    <th>Education</th>
+                    <th>Accept Reject</th>
+                </tr>
+                <% for(var i=0; i < experts.length;i++){ %>
+                    <tr>
+                        <td>
+                            <%= experts[i].firstname %>
+                        </td>
+                        <td>
+                            <%= experts[i].education %>
+                        </td>
+                        <td><button>Accept</button>
+                            <button>Reject</button>
+                        </td>
+                    </tr>
+                    <% } %>
+            </table>
+
+    </body>
+
+</html>
